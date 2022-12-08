@@ -1,0 +1,72 @@
+
+@import "../glouble/variable";
+@import "mixin";
+main{
+    display: flex;
+    flex-direction: column;  
+    flex-wrap: wrap; 
+}
+
+.photo-text-full-time{
+    display: flex;
+    @include responsive(phone){
+        flex-direction: column;
+    }
+    @include responsive(tablet){
+        flex-direction: column;
+    }
+}
+.card{
+    display: flex;
+    @include responsive(phone){
+        flex-direction: column;
+    }
+
+}
+.photo-text:hover{
+    background: $coloricon;
+    color: $colorWebsite;
+}
+.full-time{
+    background: $Buttoncolor;
+    margin: 20px;
+    color: $colorWebsite;
+}
+.photo-text{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.photos img{
+    display: flex;
+    align-items: center;
+    width: 80px;
+    border-radius: 250px;
+    margin: 20px;
+    margin-left: 110px;
+
+}
+.text-time{
+    font-size: 30px;
+    margin-left: 20px;
+    color:  $colorWebsite;
+}
+.text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.icon{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon-updload-cv a{
+    text-decoration: none;
+}
+.skill-level {
+    display: flex;
+    flex-direction: column;
+}
+
+

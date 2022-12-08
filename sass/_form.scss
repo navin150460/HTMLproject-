@@ -1,0 +1,43 @@
+@import "../glouble/variable";
+@import "mixin";
+form{
+    width: 50%;
+    height: 40vh;
+    margin: auto;
+    margin-top: 50px;
+    color: $Buttoncolor;
+    input{
+        width: 100%;
+        padding: 10px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid $textcolor;
+        outline: none;
+    }
+    a{
+        text-decoration: none;
+        padding: 10px;
+    }
+    @import "btform";
+}
+.name{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .first-name,.last-name{
+        width: 45%;
+        @include responsive(tablet){
+            width: 100%;
+        }
+       
+    }
+    @include responsive(tablet){
+
+        flex-direction: column;
+    }
+    
+    
+}
+.ph-num,.num,.email{
+    margin-top: 15px;
+}

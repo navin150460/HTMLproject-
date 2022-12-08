@@ -1,0 +1,10 @@
+
+$breakpoint: (
+    "tablet":820px,
+    "phone":414px,
+);
+@mixin responsive($key) {
+    @media screen and (max-width: map-get($breakpoint, $key)){
+        @content;
+    }
+}

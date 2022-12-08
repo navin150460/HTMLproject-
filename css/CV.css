@@ -1,0 +1,94 @@
+form {
+  width: 50%;
+  height: 40vh;
+  margin: auto;
+  margin-top: 50px;
+  color: #60B3D1;
+}
+form input {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #F4FBFD;
+  outline: none;
+}
+form a {
+  text-decoration: none;
+  padding: 10px;
+}
+form .button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+form button {
+  padding: 15px;
+  border: none;
+  border-radius: 7px;
+  background: #60B3D1;
+}
+@media screen and (max-width: 820px) {
+  form button {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 414px) {
+  form button {
+    padding: 7px;
+  }
+}
+
+.name {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.name .first-name, .name .last-name {
+  width: 45%;
+}
+@media screen and (max-width: 820px) {
+  .name .first-name, .name .last-name {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 820px) {
+  .name {
+    flex-direction: column;
+  }
+}
+
+.ph-num, .num, .email {
+  margin-top: 15px;
+}
+
+body {
+  background-image: url(../photoes/CVpicture.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main {
+  background: rgba(20, 20, 74, 0.445);
+  height: 100vh;
+  width: 50%;
+}
+@media screen and (max-width: 820px) {
+  main {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 414px) {
+  main {
+    width: 100%;
+  }
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+main form .upload input {
+  border: none;
+}/*# sourceMappingURL=CV.css.map */

@@ -1,0 +1,210 @@
+nav {
+  background: #60B3D1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.nav-left {
+  flex: 2;
+}
+.nav-left img {
+  width: 80%;
+}
+@media screen and (max-width: 414px) {
+  .nav-left {
+    display: none;
+  }
+}
+
+.nav-center {
+  flex: 3;
+}
+.nav-center ul li {
+  list-style: none;
+}
+.nav-center ul li a {
+  text-decoration: none;
+  margin: 30px;
+  font-size: 25px;
+  color: #F4FBFD;
+}
+@media screen and (max-width: 820px) {
+  .nav-center ul li a {
+    font-size: 8px;
+    margin: 10px;
+  }
+}
+.nav-center ul li a:hover {
+  color: #FED440;
+}
+
+.nav-right {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+}
+.nav-right img {
+  width: 40px;
+  border-radius: 20px;
+}
+@media screen and (max-width: 820px) {
+  .nav-right img {
+    width: 30px;
+    border-radius: 15px;
+  }
+}
+.nav-right span {
+  font-weight: bold;
+  margin-top: 5px;
+}
+@media screen and (max-width: 820px) {
+  .nav-right span {
+    display: none;
+  }
+}
+
+.language {
+  display: flex;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main .search {
+  width: 100%;
+  background-image: url(../photoes/backround-bt.jpg);
+  background-size: cover;
+}
+main form {
+  height: 50vh;
+  margin: auto;
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 414px) {
+  main form {
+    height: 20vh;
+  }
+}
+@media screen and (max-width: 820px) {
+  main form {
+    height: 20vh;
+  }
+}
+main form input[type=text] {
+  margin: auto;
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  width: 90%;
+  background: #f1f1f1;
+}
+@media screen and (max-width: 820px) {
+  main form input[type=text] {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 414px) {
+  main form input[type=text] {
+    width: 100%;
+  }
+}
+main form button {
+  width: 10%;
+  padding: 6px;
+  background: #60B3D1;
+  color: #F4FBFD;
+  font-size: 17px;
+  border: none;
+  border-left: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 414px) {
+  main form button {
+    width: 15%;
+  }
+}
+
+.text-job p {
+  font-size: 40px;
+  text-align: center;
+}
+
+.photo-find-job {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 820px) {
+  .photo-find-job {
+    flex-direction: column;
+  }
+}
+
+.card {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 820px) {
+  .card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .card {
+    flex-direction: column;
+  }
+}
+
+.card img {
+  width: 280px;
+}
+@media screen and (max-width: 820px) {
+  .card img {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .card img {
+    width: 300px;
+  }
+}
+
+.photo-text {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 820px) {
+  .photo-text {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .photo-text {
+    width: 100%;
+  }
+}
+
+.photo-text img {
+  height: 40vh;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+@media screen and (max-width: 820px) {
+  .photo-text img {
+    height: 30vh;
+  }
+}
+@media screen and (max-width: 414px) {
+  .photo-text img {
+    height: 32vh;
+  }
+}/*# sourceMappingURL=homestyle.css.map */

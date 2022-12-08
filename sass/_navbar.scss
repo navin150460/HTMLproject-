@@ -1,0 +1,73 @@
+@import "../glouble/variable";
+@import "mixin";
+nav{
+    background:$Buttoncolor;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: capitalize;
+    
+       
+}
+.nav-left{
+    flex: 2;
+    img{
+        width: 80%;
+
+    }
+    @include responsive(phone){
+        display: none;
+    }
+}
+.nav-center{
+    flex: 3;
+    ul{
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                margin: 30px;
+                font-size: 25px;
+                color: $textcolor;
+                @include responsive(tablet){
+                    font-size: 8px;
+                    margin: 10px;
+                }
+              
+              
+            }
+            a:hover{
+                color: $coloricon;
+            }
+        }
+        
+    }
+}
+.nav-right{
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    img{
+        width: 40px;
+        border-radius: 20px;
+        @include responsive(tablet){
+            width: 30px;
+            border-radius: 15px;
+        }
+        
+    }
+    span{
+        font-weight: bold;
+        margin-top: 5px;
+        @include responsive(tablet){
+            display:none;
+        }
+
+
+    }
+
+}
+.language{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,30 @@
+@import "form";
+@import "../glouble/variable";
+@import "mixin";
+body {
+    background-image: url(../photoes/CVpicture.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+main{
+    background: rgba(20, 20, 74, 0.445);
+    height: 100vh;
+    width: 50%;
+    @include responsive(tablet){
+        width: 100%;
+    }
+    @include responsive(phone){
+        width: 100%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        .upload input{
+            border: none;
+        }
+    }
+    
+    
+}

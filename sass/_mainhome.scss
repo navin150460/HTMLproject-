@@ -1,0 +1,54 @@
+@import "../glouble/variable";
+main{
+    display: flex;
+    flex-direction: column; 
+    .search{
+        width: 100%;
+        background-image: url(../photoes/backround-bt.jpg);
+        background-size: cover;
+    }
+    form{
+        height: 50vh;
+        margin: auto;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        @include responsive(phone){
+            height: 20vh;
+        }
+        @include responsive(tablet){
+            height: 20vh;
+        }
+        input[type=text] {
+            margin: auto;
+            padding: 10px;
+            font-size: 17px;
+            border: none;
+            width: 90%;
+            background: #f1f1f1;
+            @include responsive(tablet){
+                width: 100%;
+            }
+            @include responsive(phone){
+                width: 100%;
+            }
+        }
+        button {
+
+            width: 10%;
+            padding: 6px;
+            background: $Buttoncolor;
+            color: $textcolor;
+            font-size: 17px;
+            border: none;
+            border-left: none;
+            cursor: pointer;
+            @include responsive(phone){
+                width: 15%;
+            }
+            
+        }
+        
+    }
+    
+}

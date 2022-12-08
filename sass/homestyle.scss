@@ -1,0 +1,72 @@
+
+@import "navbar";
+@import "mainhome";
+@import "../sass/mixin";
+@import "mixin";
+
+.text-job p{
+    font-size: 40px;
+    text-align: center;
+    
+
+}
+.photo-find-job{
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    @include responsive(tablet){
+        flex-direction: column;
+    }
+}
+.card{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    @include responsive(tablet){
+        width: 100%;
+        
+    }
+    @include responsive(phone){
+        flex-direction: column;
+    }
+    
+   
+}
+.card img{
+    width: 280px;
+    @include responsive(tablet){
+        width: 350px;
+    }
+    @include responsive(phone){
+        width: 300px;
+    }
+  
+    
+}
+.photo-text{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include responsive(tablet){
+        width: 50%;
+    }
+    @include responsive(phone){
+        width: 100%;
+    }
+    
+}
+.photo-text img{
+    height: 40vh;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    @include responsive(tablet){
+        height: 30vh;
+    }
+    @include responsive(phone){
+        height: 32vh;
+    }
+
+   
+}

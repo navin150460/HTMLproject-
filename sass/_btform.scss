@@ -1,0 +1,21 @@
+
+@import "../glouble/variable";
+@import "mixin";
+.button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+button{
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    background: $Buttoncolor;
+    @include responsive(tablet){
+        padding: 10px;
+    }
+    @include responsive(phone){
+        padding: 7px;
+    }
+    
+}
